@@ -1,13 +1,13 @@
-## HyperLink
+# HyperLink
 
-# Description
+## Description
 
 Hyperlink is a character database for competitive Super Smash Brothers Melee Link players.  
 It will use API's to find relevant tournament info, as well as video resources.  
 Additionally, it will contain a menu consisting of all of Link's moves and attributes.  
 Each move will have a corresponding interactive GIF, as well as a table to display the move's data.  
 
-# User Story
+## User Story
 
 As a competitive Link player,
 I want a data resource containing all of the relevant info to the character I play,  
@@ -15,16 +15,16 @@ as well as the ability to keep up with tournaments, I would also like to have re
 available video resources for study,
 So that I am able to quickly find the information I need regarding my character.
 
-# Design Sketch
+## Design Sketch
 
 ![](images/linklayoutsmall.png)
 
-# API's to be Used
+## API's to be Used
 
 * smash.gg
 * youtube
 
-# Task Breakdown
+## Task Breakdown
 
 * HTML and CSS framework
     * Navbar
