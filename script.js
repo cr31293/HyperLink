@@ -53,4 +53,56 @@ var Jab1 = new Object();
     Jab1.row3 = ["2", "5%", "361°", "60", "10", "0", "4", "4", "-9", "2.4"];
     Jab1.row4 = ["3", "5%", "361°", "60", "10", "0", "4", "4", "-9", "2.4"];
 
-    
+function buildTable();
+var table = document.createElement('table');
+var thead = document.createElement('thead');
+var tbody = document.createElement('tbody');
+
+// for loop for a to sort through rows
+// for loop for b to sort through columns
+//jab1[a[b]]
+
+var theadTr = document.createElement('tr');
+for (var i = 0; i < labels.length; i++) {
+  var theadTh = document.createElement('th');
+  theadTh.innerHTML = labels[i];
+  theadTr.appendChild(theadTh);
+}
+thead.appendChild(theadTr);
+table.appendChild(thead);
+
+for (j = 0; j < objects.length; j++) {
+  var tbodyTr = document.createElement('tr');
+  for (k = 0; k < labels.length; k++) {
+    var tbodyTd = document.createElement('td');
+    tbodyTd.innerHTML = objects[j][labels[k].toLowerCase()];
+    tbodyTr.appendChild(tbodyTd);
+  }
+  tbody.appendChild(tbodyTr);
+}
+table.appendChild(tbody);
+
+container.appendChild(table);
+}
+
+var labels1 = ['ID', 'Name']; 
+var objects1 = [
+{"id": "1", 'name': "richard"},
+{"id": "2", 'name': "santos"}
+];
+
+var labels2 = ['ID', 'NOME'];
+var objects2 = [
+{"id": "1", 'nome': "richard"},
+{"id": "2", 'nome': "adriana"}
+];
+
+var labels3 = ['ID', 'NAME', 'PLATE'];
+var objects3 = [
+{"id": "1", 'name': "jetta",  'plate': "DFG-1222"},
+{"id": "2", 'name': "fusion", 'plate': "DFF-3342"}
+];
+
+buildTable(labels1, objects1, document.getElementById('a'));
+buildTable(labels2, objects2, document.getElementById('b'));
+buildTable(labels3, objects3, document.getElementById('c'));
