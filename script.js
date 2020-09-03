@@ -1,115 +1,63 @@
 var attacks = [
     {
-        name: 'U Tilt',
-        image: 'Gif/Normals/U-Tilt.gif',
-        type: 'normal'
+        name: 'Jab 1',
+        image: '',
+        type: '',
         stats: [
             {
                 hitboxId: "0",
-                damage: "9%",
-                angle: "95°",
-                kbg: "122",
-                bkb: "30",
+                damage: "5%",
+                angle: "361°",
+                kbg: "60",
+                bkb: "10",
                 skb: "0",
-                hitLag: "6",
-                shieldStun: "6",
-                shieldAdv: "-14/-9",
-                size: "3.6"
+                hitLag: "4",
+                shieldStun: "4",
+                shieldAdv: "-9",
+                size: "4.4"
             },
-                
-            {
-                hitboxId: "1",
-                damage: "9%",
-                angle: "85°",
-                kbg: "130",
-                bkb: "30",
-                skb: "0",
-                hitLag: "6",
-                shieldStun: "6",
-                shieldAdv: "-14/-9",
-                size: "4.2"
-            },
-            {
-                hitboxId: "2",
-                damage: "9%",
-                angle: "85°",
-                kbg: "124",
-                bkb: "30",
-                skb: "0",
-                hitLag: "6",
-                shieldStun: "6",
-                shieldAdv: "-14/-9",
-                size: "2.8"
-            },
-            {
-                hitboxId: "3",
-                damage: "9%",
-                angle: "85°",
-                kbg: "123",
-                bkb: "30",
-                skb: "0",
-                hitLag: "6",
-                shieldStun: "6",
-                shieldAdv: "-14/-9",
-                size: "2.8"
-            }
-        ]
-    },
-    {
-        name: 'Rapid Jab',
-        stats: [
             {
                 hitboxId: "0",
-                damage: "1%",
-                angle: "0°",
-                kbg: "40",
-                bkb: "15",
+                damage: "5%",
+                angle: "361°",
+                kbg: "60",
+                bkb: "10",
                 skb: "0",
-                hitLag: "3",
-                shieldStun: "2",
-                shieldAdv: "-10",
-                size: "4.4"
+                hitLag: "4",
+                shieldStun: "4",
+                shieldAdv: "-9",
+                size: "4"
             },
             {
-                hitboxId: "1",
-                damage: "1%",
-                angle: "0°",
-                kbg: "40",
-                bkb: "15",
+                hitboxId: "0",
+                damage: "5%",
+                angle: "361°",
+                kbg: "60",
+                bkb: "10",
                 skb: "0",
-                hitLag: "3",
-                shieldStun: "2",
-                shieldAdv: "-10",
-                size: "4.4"
+                hitLag: "4",
+                shieldStun: "4",
+                shieldAdv: "-9",
+                size: "2.4"
             },
             {
-                hitboxId: "2",
-                damage: "1%",
-                angle: "0°",
-                kbg: "40",
-                bkb: "15",
+                hitboxId: "0",
+                damage: "5%",
+                angle: "361°",
+                kbg: "60",
+                bkb: "10",
                 skb: "0",
-                hitLag: "3",
-                shieldStun: "2",
-                shieldAdv: "-10",
-                size: "2.8"
-            },
-            {
-                hitboxId: "3",
-                damage: "1%",
-                angle: "0°",
-                kbg: "40",
-                bkb: "15",
-                skb: "0",
-                hitLag: "3",
-                shieldStun: "2",
-                shieldAdv: "-10",
-                size: "2"
+                hitLag: "4",
+                shieldStun: "4",
+                shieldAdv: "-9",
+                size: "2.4"
             },
         ]
     },
     {
         name: 'Jab 2',
+        image: '',
+        type: '',
         stats: [
             {
                 hitboxId: "0",
@@ -157,65 +105,14 @@ var attacks = [
                 hitLag: "4",
                 shieldStun: "3",
                 shieldAdv: "-7",
-                size: "2.4"
-            },
-        ]
-    },
-    {
-        name: 'Jab 1',
-        stats: [
-            {
-                hitboxId: "0",
-                damage: "5%",
-                angle: "361°",
-                kbg: "60",
-                bkb: "10",
-                skb: "0",
-                hitLag: "4",
-                shieldStun: "4",
-                shieldAdv: "-9",
-                size: "4.4"
-            },
-            {
-                hitboxId: "0",
-                damage: "5%",
-                angle: "361°",
-                kbg: "60",
-                bkb: "10",
-                skb: "0",
-                hitLag: "4",
-                shieldStun: "4",
-                shieldAdv: "-9",
-                size: "4"
-            },
-            {
-                hitboxId: "0",
-                damage: "5%",
-                angle: "361°",
-                kbg: "60",
-                bkb: "10",
-                skb: "0",
-                hitLag: "4",
-                shieldStun: "4",
-                shieldAdv: "-9",
-                size: "2.4"
-            },
-            {
-                hitboxId: "0",
-                damage: "5%",
-                angle: "361°",
-                kbg: "60",
-                bkb: "10",
-                skb: "0",
-                hitLag: "4",
-                shieldStun: "4",
-                shieldAdv: "-9",
                 size: "2.4"
             },
         ]
     },
     {
         name: 'Jab3',
+        image: '',
+        type: '',
         stats: [
             {
                 hitboxId: "0",
@@ -268,7 +165,64 @@ var attacks = [
         ]
     },
     {
+        name: 'Rapid Jab',
+        image: '',
+        type: '',
+        stats: [
+            {
+                hitboxId: "0",
+                damage: "1%",
+                angle: "0°",
+                kbg: "40",
+                bkb: "15",
+                skb: "0",
+                hitLag: "3",
+                shieldStun: "2",
+                shieldAdv: "-10",
+                size: "4.4"
+            },
+            {
+                hitboxId: "1",
+                damage: "1%",
+                angle: "0°",
+                kbg: "40",
+                bkb: "15",
+                skb: "0",
+                hitLag: "3",
+                shieldStun: "2",
+                shieldAdv: "-10",
+                size: "4.4"
+            },
+            {
+                hitboxId: "2",
+                damage: "1%",
+                angle: "0°",
+                kbg: "40",
+                bkb: "15",
+                skb: "0",
+                hitLag: "3",
+                shieldStun: "2",
+                shieldAdv: "-10",
+                size: "2.8"
+            },
+            {
+                hitboxId: "3",
+                damage: "1%",
+                angle: "0°",
+                kbg: "40",
+                bkb: "15",
+                skb: "0",
+                hitLag: "3",
+                shieldStun: "2",
+                shieldAdv: "-10",
+                size: "2"
+            },
+        ]
+    },
+    {
         name: 'dashATK',
+        image: '',
+        type: '',
         stats: [
             {
                 hitboxId: "0",
@@ -318,6 +272,62 @@ var attacks = [
                 shieldAdv: "-27/-22",
                 size: "4.4"
             },
+        ]
+    },
+    {
+        name: 'U Tilt',
+        image: 'Gif/Normals/U-Tilt.gif',
+        type: 'normal',
+        stats: [
+            {
+                hitboxId: "0",
+                damage: "9%",
+                angle: "95°",
+                kbg: "122",
+                bkb: "30",
+                skb: "0",
+                hitLag: "6",
+                shieldStun: "6",
+                shieldAdv: "-14/-9",
+                size: "3.6"
+            },
+            
+            {
+                hitboxId: "1",
+                damage: "9%",
+                angle: "85°",
+                kbg: "130",
+                bkb: "30",
+                skb: "0",
+                hitLag: "6",
+                shieldStun: "6",
+                shieldAdv: "-14/-9",
+                size: "4.2"
+            },
+            {
+                hitboxId: "2",
+                damage: "9%",
+                angle: "85°",
+                kbg: "124",
+                bkb: "30",
+                skb: "0",
+                hitLag: "6",
+                shieldStun: "6",
+                shieldAdv: "-14/-9",
+                size: "2.8"
+            },
+            {
+                hitboxId: "3",
+                damage: "9%",
+                angle: "85°",
+                kbg: "123",
+                bkb: "30",
+                skb: "0",
+                hitLag: "6",
+                shieldStun: "6",
+                shieldAdv: "-14/-9",
+                size: "2.8"
+            }
         ]
     },
     // {
