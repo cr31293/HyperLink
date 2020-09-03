@@ -41,9 +41,19 @@
           alt="Link Banner Image" width="100%"/>
           <div class="card-section">
             <p>
-             Here you will have Videos
+             <strong>See below for top YouTube results for Link gameplay!</strong>
             </p>
           </div>
+
+          <div class="medium-10 cell">
+            <div id="vid0"></div>
+            <div id="vid1"></div>
+            <div id="vid2"></div>
+            <div id="vid2"></div>
+            <div id="vid3"></div>
+            <div id="vid4"></div>
+          </div>
+
     </div>
   </div>
 
@@ -54,15 +64,45 @@
     $(document).foundation();
 
 
+// Assigning variable for YouTube API 
   queryURL = "https://www.googleapis.com/youtube/v3/search?part=id&order=relevance&q=ssbm%7Clink&topicId=%2Fm%2F025zzc&type=video&key=AIzaSyAMiIXBXo1Vjo-5pAk52RzOzbTIPV700ts"
-  
+
+// Querying YouTube API
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function(response) {
-    console.log(response);
+
+
+// Assigning variables for the top 5 video IDs from the YouTube API.
+    var src0 = "https://www.youtube.com/embed/" + response.items[0].id.videoId;
+    var src1 = "https://www.youtube.com/embed/" + response.items[1].id.videoId;
+    var src2 = "https://www.youtube.com/embed/" + response.items[2].id.videoId;
+    var src3 = "https://www.youtube.com/embed/" + response.items[3].id.videoId;
+    var src4 = "https://www.youtube.com/embed/" + response.items[4].id.videoId;
+
+// Embedding logic
+    var vidDiv0 = document.getElementById("vid0");
+    var vidDiv1 = document.getElementById('vid1');
+    var vidDiv2 = document.getElementById('vid2');
+    var vidDiv3 = document.getElementById('vid3');
+    var vidDiv4 = document.getElementById('vid4');
+
+    var embed0 = '<iframe width="560" height="315" src='+src0+' frameborder="5" style="margin:10px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    var embed1 = '<iframe width="560" height="315" src='+src1+' frameborder="5" style="margin:10px"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    var embed2 = '<iframe width="560" height="315" src='+src2+' frameborder="5" style="margin:10px"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    var embed3 = '<iframe width="560" height="315" src='+src3+' frameborder="5" style="margin:10px"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    var embed4 = '<iframe width="560" height="315" src='+src4+' frameborder="5" style="margin:10px"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+    vidDiv0.innerHTML = embed0;
+    vidDiv1.innerHTML = embed1;
+    vidDiv2.innerHTML = embed2;
+    vidDiv3.innerHTML = embed3;
+    vidDiv4.innerHTML = embed4; 
+
   })
 
+  
 
   </script>
 
