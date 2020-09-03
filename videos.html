@@ -52,6 +52,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
   <script>
     $(document).foundation();
+
+
+  queryURL = "https://www.googleapis.com/youtube/v3/search?part=id&order=relevance&q=ssbm%7Clink&topicId=%2Fm%2F025zzc&type=video&key=AIzaSyAMiIXBXo1Vjo-5pAk52RzOzbTIPV700ts"
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  })
+
+
   </script>
 
 
