@@ -1,11 +1,120 @@
+var attacks = [
+    {
+        name: 'Tilt',
+        stats: [
+            {
+                id: "0",
+                damage: "9%",
+                angle: "95°",
+                kbg: "122",
+                bkb: "30",
+                skb: "0",
+                lag: "6",
+                stun: "6",
+                adv: "-14/-9",
+                size: "3.6"
+            }
+                
+            {
+                id: 1,"1",
+                damage: "9%",
+                angle: "85°",
+                kbg: "130",
+                bkb: "30",
+                skb: "0",
+                lag: "6",
+                stun: "6",
+                adv: "-14/-9",
+                size: "4.2"
+            },
+            {
+                id: "2",
+                damage: "9%",
+                angle: "85°",
+                kbg: "124",
+                bkb: "30",
+                skb: "0",
+                lag: "6",
+                stun: "6",
+                adv: "-14/-9",
+                size: "2.8"
+            },
+            {
+                id: "3",
+                damage: "9%",
+                angle: "85°",
+                kbg: "123",
+                bkb: "30",
+                skb: "0",
+                lag: "6",
+                stun: "6",
+                adv: "-14/-9",
+                size: "2.8"
+            }
+        ]
+    },
+    {
+        name: 'Rapid Jab'
+               stats: [
+            {
+                HitboxId: "0",  
+                Damage: "1%",
+                Angle: "0°",
+                KBG: "40",
+                BKB: "15",
+                SKB: "0",
+                HitLag:"3",
+                ShieldStun: "2",
+                ShieldAdv: "-10",
+                Size: "4.4"     
+            },
+            {
+                HitboxId: "1",
+                Damage: "1%",
+                Angle: "0°",
+                KBG: "40",
+                BKB: "15",
+                SKB: "0",
+                HitLag: "3",
+                ShieldStun: "2",
+                ShieldAdv: "-10",
+                Size: "4.4"
+            },
+            {
+                HitboxId: "2",
+                Damage: "1%",
+                Angle: "0°",
+                KBG: "40",
+                BKB: "15",
+                SKB: "0",
+                HitLag: "3",
+                ShieldStun: "2",
+                ShieldAdv: "-10",
+                Size: "2.8"
+            },
+            {
+                HitboxId: "3",
+                Damage: "1%",
+                Angle: "0°",
+                KBG: "40",
+                BKB: "15",
+                SKB: "0",
+                HitLag: "3",
+                ShieldStun: "2",
+                ShieldAdv: "-10",
+                Size: "2"
+            },
+        ]
+    }
+  ];
 
-var uTiltLabels = ["Hitbox Id", "Damage", "Angle", "KBG", "BKB", "SKB", "Hit Lag", "Shield Stun", "Shield Adv", "Size"];
-var uTilt = [
-    ["0", "9%", "95°", "122", "30", "0", "6", "6", "-14/-9", "3.6"],
-    ["1", "9%", "85°", "130", "30", "0", "6", "6", "-14/-9", "4.2"],
-    ["2", "9%", "85°", "124", "30", "0", "6", "6", "-14/-9", "2.8"],
-    ["3", "9%", "85°", "123", "30", "0", "6", "6", "-14/-9", "2.8"]
-];
+// var uTiltLabels = ["Hitbox Id", "Damage", "Angle", "KBG", "BKB", "SKB", "Hit Lag", "Shield Stun", "Shield Adv", "Size"];
+// var uTilt = [
+//     ["0", "9%", "95°", "122", "30", "0", "6", "6", "-14/-9", "3.6"],
+//     ["1", "9%", "85°", "130", "30", "0", "6", "6", "-14/-9", "4.2"],
+//     ["2", "9%", "85°", "124", "30", "0", "6", "6", "-14/-9", "2.8"],
+//     ["3", "9%", "85°", "123", "30", "0", "6", "6", "-14/-9", "2.8"]
+// ];
 
 var uSmashLabels = ["Hitbox Id", "Damage", "Angle", "KBG", "BKB", "SKB", "Hit Lag", "Shield Stun", "Shield Adv", "Size"];
 var uSmash = [
@@ -28,13 +137,13 @@ var uSmash = [
     ["3", "9%", "90°", "80", "90", "0", "6", "6", "-4/-2", "2"]
 ];
 
-var rapidJabLabels = ["Hitbox Id", "Damage", "Angle", "KBG", "BKB", "SKB", "Hit Lag", "Shield Stun", "Shield Adv", "Size"];
-var rapidJab = [
-    ["0", "1%", "0°", "40", "15", "0", "3", "2", "-10", "4.4"],
-    ["1", "1%", "0°", "40", "15", "0", "3", "2", "-10", "4.4"],
-    ["2", "1%", "0°", "40", "15", "0", "3", "2", "-10", "2.8"],
-    ["3", "1%", "0°", "40", "15", "0", "3", "2", "-10", "2"]
-];
+// var rapidJabLabels = ["Hitbox Id", "Damage", "Angle", "KBG", "BKB", "SKB", "Hit Lag", "Shield Stun", "Shield Adv", "Size"];
+// var rapidJab = [
+//     ["0", "1%", "0°", "40", "15", "0", "3", "2", "-10", "4.4"],
+//     ["1", "1%", "0°", "40", "15", "0", "3", "2", "-10", "4.4"],
+//     ["2", "1%", "0°", "40", "15", "0", "3", "2", "-10", "2.8"],
+//     ["3", "1%", "0°", "40", "15", "0", "3", "2", "-10", "2"]
+// ];
 
 var jab2Labels = ["Hitbox Id", "Damage", "Angle", "KBG", "BKB", "SKB", "Hit Lag", "Shield Stun", "Shield Adv", "Size"];
 var jab2 = [
@@ -53,12 +162,20 @@ var jab1 = [
     ["3", "5%", "361°", "60", "10", "0", "4", "4", "-9", "2.4"]
 ];
 
-buildTable(rapidJabLabels, rapidJab);
+$('#jab1').on('click', function(event) {
+    event.preventDefault();
+    console.log("click");
+    buildTable(jab1Labels, jab1);
+});
+
+
 function buildTable(labels, data) {
     var table = document.createElement('table');
     var thead = document.createElement('thead');
     var tbody = document.createElement('tbody');
     var container = document.getElementById('table-container');
+    var newImg = $('<img>');
+    var img = newImg.attr('src', "gif/" + data + ".gif")
     
     var theadTr = document.createElement('tr');
     for (var i = 0; i < labels.length; i++) {
@@ -80,10 +197,12 @@ for (var a = 0; a < data.length; a++) {
 }
 table.appendChild(tbody);
 
+container.append
+
 container.appendChild(table);
 }
 
-// var Link = new Object();
-//     Link.row0 = ["Weight", "Walk Speed", "Run Speed", "Air Speed", "Air Acceleration", "Fall Speed", "FF Speed", "Gravity", "Traction", "Jump Squat", "SH Air Time", "FH Air Time", "SH FF Air Time", "FH FF Air Time", "Earliest SH FF", "Earliest FH FF"];
-//     Link.row1 = ["104", "1.2", "1.3", "1", ".06", "2.13", "3", ".11", ".1", "6 Frames", "32 Frames", "49 Frames", "20 Frames", "36 Frames", "Frame 14", "Frame 23"];
-//     Link.row2 = ["6-7th", "6-7th", "23-24th", "6-7th", "5-11th", "7-9th", "4-5th", "8-11th", "1-4th", "23-25th", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A",];
+var Link = new Object();
+    Link.row0 = ["Weight", "Walk Speed", "Run Speed", "Air Speed", "Air Acceleration", "Fall Speed", "FF Speed", "Gravity", "Traction", "Jump Squat", "SH Air Time", "FH Air Time", "SH FF Air Time", "FH FF Air Time", "Earliest SH FF", "Earliest FH FF"];
+    Link.row1 = ["104", "1.2", "1.3", "1", ".06", "2.13", "3", ".11", ".1", "6 Frames", "32 Frames", "49 Frames", "20 Frames", "36 Frames", "Frame 14", "Frame 23"];
+    Link.row2 = ["6-7th", "6-7th", "23-24th", "6-7th", "5-11th", "7-9th", "4-5th", "8-11th", "1-4th", "23-25th", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A",];
