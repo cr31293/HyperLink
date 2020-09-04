@@ -21,7 +21,7 @@ So that I am able to quickly find the information I need regarding my character.
 
 ## API's to be Used
 
-* smash.gg
+* reddit
 * youtube
 
 ## Task Breakdown
