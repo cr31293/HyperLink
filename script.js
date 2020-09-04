@@ -17,7 +17,7 @@ var attacks = [
                 size: "4.4"
             },
             {
-                hitboxId: "0",
+                hitboxId: "1",
                 damage: "5%",
                 angle: "361°",
                 kbg: "60",
@@ -29,7 +29,7 @@ var attacks = [
                 size: "4"
             },
             {
-                hitboxId: "0",
+                hitboxId: "2",
                 damage: "5%",
                 angle: "361°",
                 kbg: "60",
@@ -41,7 +41,7 @@ var attacks = [
                 size: "2.4"
             },
             {
-                hitboxId: "0",
+                hitboxId: "3",
                 damage: "5%",
                 angle: "361°",
                 kbg: "60",
@@ -110,7 +110,7 @@ var attacks = [
         ]
     },
     {
-        name: 'Jab3',
+        name: 'Jab 3',
         image: 'gifs/nrml/jabThree.gif',
         type: 'normal',
         stats: [
@@ -220,7 +220,7 @@ var attacks = [
         ]
     },
     {
-        name: 'dashATK',
+        name: 'Dash Attack',
         image: 'gifs/nrml/dashAtk.gif',
         type: 'normal',
         stats: [
@@ -275,7 +275,7 @@ var attacks = [
         ]
     },
     {
-        name: "U Smash",
+        name: "Up Smash",
         image: 'gifs/nrml/uSmash.gif',
         type: 'normal',
         stats: [
@@ -462,7 +462,7 @@ var attacks = [
         ]
     },
     {
-        name: "U Smash",
+        name: "Down Smash",
         image: 'gifs/nrml/dSmash.gif',
         type: 'normal',
         stats: [
@@ -589,7 +589,7 @@ var attacks = [
         ]
     },
     {
-        name: 'F Smash 1',
+        name: 'Forward Smash 1',
         image: 'gifs/nrml/fSmash1.gif',
         type: 'normal',
         stats: [
@@ -644,7 +644,7 @@ var attacks = [
         ]
     },
     {
-        name: 'F Smash 2',
+        name: 'Forward Smash 2',
         image: 'gifs/nrml/fSmash2.gif',
         type: 'normal',
         stats: [
@@ -699,7 +699,7 @@ var attacks = [
         ]
     },
     {
-        name: 'U Tilt',
+        name: 'Up Tilt',
         image: 'gifs/nrml/uTilt.gif',
         type: 'normal',
         stats: [
@@ -755,7 +755,7 @@ var attacks = [
         ]
     },
     {
-        name: 'D Tilt',
+        name: 'Down Tilt',
         image: 'gifs/nrml/dTilt.gif',
         type: 'normal',
         stats: [
@@ -811,7 +811,7 @@ var attacks = [
         ]
     },
     {
-        name: 'F Tilt',
+        name: 'Forward Tilt',
         image: 'gifs/nrml/fTilt.gif',
         type: 'normal',
         stats: [
@@ -1464,7 +1464,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "Strong Hit 8-13",
+                skb: "Strong Hit (8-13)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -1524,7 +1524,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "Second Hit",
+                skb: "Spike Hit (14-41)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -1972,7 +1972,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "frame 1",
+                skb: "Frame (1)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -1996,7 +1996,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "frame 2",
+                skb: "Frame (2)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -2020,7 +2020,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "frame 3",
+                skb: "Frame (3)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -2099,7 +2099,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "frame 1",
+                skb: "Frame (1)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -2123,7 +2123,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "frame 2",
+                skb: "Frame (2)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
@@ -2147,7 +2147,7 @@ var attacks = [
                 angle: "",
                 kbg: "",
                 bkb: "",
-                skb: "frame 3",
+                skb: "Frame (3)",
                 hitLag: "",
                 shieldStun: "",
                 shieldAdv: "",
