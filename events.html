@@ -54,7 +54,26 @@
     $(document).foundation();
   </script>
 
+<!-- API Key: f88b23a1963c22d0057608b490dddc15 -->
+  <script>
+queryURL = "https://api.smash.gg/gql/alpha"
 
+var name = ""
+
+// Querying YouTube API
+$.ajax({
+    url: queryURL,
+    headers: {"Authorization": "Bearer f88b23a1963c22d0057608b490dddc15"},
+                  contentType: "application/json",
+                  type:'POST',
+                  data: JSON.stringify({
+                     query:`{tournaments{Turku, FI}}`
+                  }),
+    
+  }).then(function(response) {})
+  
+
+</script>
 </body>
 
 </html>
